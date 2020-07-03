@@ -831,12 +831,12 @@ body {
       right: 3.5rem; } }
 
 .navigation__nav {
-  display: none;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   z-index: 1500;
+  width: 0;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -877,8 +877,8 @@ body {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  display: block;
   opacity: 1;
+  top: 0;
   width: 100%; }
 
 .navigation__icon {
